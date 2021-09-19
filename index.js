@@ -84,4 +84,4 @@ const cheat = function (input) {
     high--;
   }
 };
-cheat("abbcatv");
+cheat("veenau");
