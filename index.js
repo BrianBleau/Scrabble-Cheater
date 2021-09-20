@@ -40,6 +40,7 @@ const findPermutations = function (string) {
     if (string.indexOf(char) != i) continue;
     possComb.push(char);
     let rest = string.slice(0, i) + string.slice(i + 1, string.length);
+    console.log(rest);
     for (perm of findPermutations(rest)) {
       possComb.push(char + perm);
     }
@@ -84,4 +85,4 @@ const cheat = function (input) {
     high--;
   }
 };
-cheat("veenau");
+cheat("abca");
